@@ -24,10 +24,6 @@ services:
     links:
       - db
     volumes: *appvolumes
-    deploy:
-      resources:
-        limits:
-          memory: 512M
 
   db:
     image: percona:5.7
